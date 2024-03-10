@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #7C3AED;
+  color: #403937;
+  font-family: "Inter", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  color: #fff;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+section {
+  margin: 38px 0;
+}
+
+.opacity {
+  opacity: .4;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 175px auto;
+  grid-template-areas:
+    "S M"
+  ;
+}
+
+aside {
+  grid-area: S;
+  height: 100vh;
+
+  padding: 32px;
+}
+
+aside .menu ul li a {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  margin-bottom: 36px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+aside .menu {
+  margin: 60px 0pc;
+}
+
+main {
+  width: 100%;
+  max-width: 2000px;
+  grid-area: M;
+
+  margin-top: 4px;
+  padding: 48px 32px;
+
+  background-color: #FBFAFF;
+  border-radius: 32px 0 0 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .title button {
+  background-color: transparent;
+  border: none;
+}
+
+header > img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+section .search {
+  display: flex;
+  gap: 1rem;
+}
+
+section .search button {
+  padding: 12px 32px;
+
+  background-color: #7C3AED;
+  border: none;
+  border-radius: 5px;
+}
+
+section .search input[type="search"] {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+}
+
+section .columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "TODO INPROGRESS DONE"
+  ;
+}
+
+section .columns #todo {
+  grid-area: TODO;
+}
+
+section .columns #in-progress {
+  grid-area: INPROGRESS;
+}
+
+section .columns #done {
+  grid-area: DONE;
+}
+
+section .columns .card {
+  max-width: 300px;
+
+  margin: 24px 0;
+  padding: 24px;
+
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 3px 3px 19px -3px rgba(124, 58, 237, 0.26);
+  -moz-box-shadow: 3px 3px 19px -3px rgba(124, 58, 237, 0.26);
+  box-shadow: 3px 3px 19px -3px rgba(124, 58, 237, 0.26);
+  border-radius: 8px;
+}
+
+section .columns .card p {
+  margin: 10px 0;
+}
+
+section .columns .card span {
+  background-color: #E2D6FF;
+  color: #7C3AED;
+
+  padding: 4px 8px;
+  margin-right: 10px;
+  border-radius: 8px;
+
+  font-size: 11px;
+}
